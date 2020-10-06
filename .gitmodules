@@ -16,3 +16,6 @@
 [submodule "layers/meta-rust"]
 	path = layers/meta-rust
 	url = https://github.com/meta-rust/meta-rust
+[submodule "layers/meta-xilinx-tools"]
+	path = layers/meta-xilinx-tools
+	url = https://github.com/Xilinx/meta-xilinx-tools

@@ -1,0 +1,5 @@
+# Supported machines
+MACHINE ?= "ultra96-zynqmp"
+
+DISTRO_FEATURES_append = "systemd virtualization"
+DISTRO ?= "resin-systemd"

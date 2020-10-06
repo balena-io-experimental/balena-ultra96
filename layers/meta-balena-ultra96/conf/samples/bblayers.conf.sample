@@ -1,0 +1,24 @@
+LCONF_VERSION = "7"
+
+BBPATH = "${TOPDIR}"
+
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+    ${TOPDIR}/../layers/poky/meta \
+    ${TOPDIR}/../layers/poky/meta-poky \
+    ${TOPDIR}/../layers/poky/meta-yocto-bsp \
+    ${TOPDIR}/../layers/meta-openembedded/meta-oe \
+    ${TOPDIR}/../layers/meta-openembedded/meta-filesystems \
+    ${TOPDIR}/../layers/meta-openembedded/meta-networking \
+    ${TOPDIR}/../layers/meta-openembedded/meta-python \
+    ${TOPDIR}/../layers/meta-xilinx/meta-xilinx-bsp \
+    ${TOPDIR}/../layers/meta-xilinx/meta-xilinx-standalone \
+    ${TOPDIR}/../layers/meta-xilinx/meta-xilinx-contrib \
+    ${TOPDIR}/../layers/meta-balena/meta-balena-common \
+    ${TOPDIR}/../layers/meta-balena/meta-balena-warrior \
+    ${TOPDIR}/../layers/meta-xilinx-tools \
+    ${TOPDIR}/../layers/meta-rust \
+    ${TOPDIR}/../layers/meta-balena-zynq \
+    ${TOPDIR}/../layers/meta-marspm3-bsp \
+    "
