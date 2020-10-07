@@ -8,4 +8,5 @@ RESIN_BOOT_PARTITION_FILES = "boot.bin: \
 RESIN_BOOT_PARTITION_FILES_remove = "resin-logo.png:/splash/resin-logo.png \
                                      os-release:/os-release \
                                      system-connections/resin-sample.ignore:/system-connections/resin-sample.ignore \
-                                     system-connec
+                                     system-connections/README.ignore:/system-connections/README.ignore \
+                                     "
