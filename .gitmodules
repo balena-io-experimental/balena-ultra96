@@ -4,12 +4,14 @@
 [submodule "layers/meta-xilinx"]
 	path = layers/meta-xilinx
 	url = https://github.com/Xilinx/meta-xilinx
+	branch = rel-v2019.1
 [submodule "layers/meta-balena"]
 	path = layers/meta-balena
 	url = https://github.com/balena-os/meta-balena
 [submodule "layers/poky"]
 	path = layers/poky
 	url = https://git.yoctoproject.org/git/poky
+	branch = thud
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded
@@ -19,3 +21,4 @@
 [submodule "layers/meta-xilinx-tools"]
 	path = layers/meta-xilinx-tools
 	url = https://github.com/Xilinx/meta-xilinx-tools
+	branch = rel-v2019.1

@@ -14,7 +14,7 @@ module.exports =
     name: 'zynq ultrascale+ on ultra96'
     image: 'resin-image'
     fstype: 'resinos-img'
-    version: 'yocto-warrior'
+    version: 'yocto-thud'
     deployArtifact: 'balena-image-ultra96.img'
 
   configuration:
