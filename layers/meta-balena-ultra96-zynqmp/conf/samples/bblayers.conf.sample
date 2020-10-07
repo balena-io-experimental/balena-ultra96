@@ -19,5 +19,5 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-balena/meta-balena-warrior \
     ${TOPDIR}/../layers/meta-xilinx-tools \
     ${TOPDIR}/../layers/meta-rust \
-    ${TOPDIR}/../layers/meta-balena-ultra96 \
+    ${TOPDIR}/../layers/meta-balena-ultra96-zynqmp \
     "

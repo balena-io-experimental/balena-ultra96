@@ -1,0 +1,14 @@
+
+  _           _                   ___  ____
+ | |__   __ _| | ___ _ __   __ _ / _ \/ ___|
+ | '_ \ / _` | |/ _ \ '_ \ / _` | | | \___ \
+ | |_) | (_| | |  __/ | | | (_| | |_| |___) |
+ |_.__/ \__,_|_|\___|_| |_|\__,_|\___/|____/
+
+ -------------------------------------------- 
+
+Resin specific images available:
+	resin-image
+
+BalenaOS on avnet ultra96 (EXPERIMENTAL) : $ MACHINE=ultra96-zynqmp bitbake resin-image
+
