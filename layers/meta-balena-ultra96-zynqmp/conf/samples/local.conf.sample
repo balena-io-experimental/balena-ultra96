@@ -3,3 +3,4 @@ MACHINE ?= "ultra96-zynqmp"
 
 DISTRO_FEATURES_append = "systemd virtualization"
 DISTRO ?= "resin-systemd"
+IMAGE_INSTALL_append = "xilinx-bootbin"
