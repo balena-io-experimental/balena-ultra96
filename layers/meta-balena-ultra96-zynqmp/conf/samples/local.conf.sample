@@ -4,3 +4,7 @@ MACHINE ?= "ultra96-zynqmp"
 DISTRO_FEATURES_append = "systemd virtualization"
 DISTRO ?= "resin-systemd"
 IMAGE_INSTALL_append = "xilinx-bootbin"
+
+PREFERRED_PROVIDER_virtual/boot-bin ?= "xilinx-bootbin"
+PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot-xlnx"
+PREFERRED_PROVIDER_virtual/pmu-firmware = "pmu-firmware"

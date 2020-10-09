@@ -1,9 +1,0 @@
-
-IMAGES_FSTYPES_ultra96-zynqmp = "balenaos-img"
-BALENA_BOOT_PARTITION_FILES_ultra96-zynqmp = " \
-    boot.bin: \
-    u-boot-${MACHINE}.img:/u-boot-dtb.img \
-    uEnv.txt: \
-    uImage: \
-    device-trees/ultra96-zynqmp.dtb:/ \
-    "
