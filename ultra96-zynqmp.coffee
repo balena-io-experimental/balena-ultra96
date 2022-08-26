@@ -3,7 +3,7 @@ deviceTypesCommon = require '@resin.io/device-types/common'
 
 module.exports =
 	version: 1
-	slug: 'ultra96-v2-zynqmp'
+	slug: 'ultra96-zynqmp'
 	aliases: [ 'ultra96' ]
 	name: 'Xilinx Ultra96 V2'
 	arch: 'aarch64'
@@ -17,11 +17,11 @@ module.exports =
 	supportsBlink: true
 
 	yocto:
-		machine: 'ultra96-v2-zynqmp'
+		machine: 'ultra96-zynqmp'
 		image: 'balena-image'
 		fstype: 'balenaos-img'
 		version: 'yocto-thud'
-		deployArtifact: 'balena-image-ultra96-v2-zynqmp.balenaos-img'
+		deployArtifact: 'balena-image-ultra96-zynqmp.balenaos-img'
 		compressed: true
 
 	options: [ networkOptions.group ]
