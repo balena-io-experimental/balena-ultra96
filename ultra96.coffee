@@ -2,23 +2,34 @@ deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
 module.exports =
-  version: 1
-  slug: 'ultra96-zynqmp'
-  state: 'experimental'
-  aliases: [ 'ultra96' ]
-  name: 'BalenaOS on avnet ultra96'
-  arch: 'armv7hf'
-  yocto:
-    machine: 'ultra96-zynqmp'
-    arch: 'armv7hf'
-    name: 'zynq ultrascale+ on ultra96'
-    image: 'resin-image'
-    fstype: 'resinos-img'
-    version: 'yocto-thud'
-    deployArtifact: 'balena-image-ultra96.img'
+	version: 1
+	slug: 'ultra96-v2-zynqmp'
+	aliases: [ 'ultra96' ]
+	name: 'Xilinx Ultra96 V2'
+	arch: 'aarch64'
+	state: 'experimental'
 
-  configuration:
-    config:
-      partition:
-        primary: 1
-      path: '/config.json'
+	instructions: commonImg.instructions
+	gettingStartedLink:
+		windows: 'http://docs.balena.io/ultra96-v2-zynqmp/nodejs/getting-started/#adding-your-first-device'
+		osx: 'http://docs.balena.io/ultra96-v2-zynqmp/nodejs/getting-started/#adding-your-first-device'
+		linux: 'http://docs.balena.io/ultra96-v2-zynqmp/nodejs/getting-started/#adding-your-first-device'
+	supportsBlink: true
+
+	yocto:
+		machine: 'ultra96-v2-zynqmp'
+		image: 'balena-image'
+		fstype: 'balenaos-img'
+		version: 'yocto-thud'
+		deployArtifact: 'balena-image-ultra96-v2-zynqmp.balenaos-img'
+		compressed: true
+
+	options: [ networkOptions.group ]
+
+	configuration:
+		config:
+			partition:
+				primary: 1
+			path: '/config.json'
+
+	initialization: commonImg.initialization

@@ -5,6 +5,9 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
+    ${TOPDIR}/../layers/meta-balena/meta-balena-common \
+    ${TOPDIR}/../layers/meta-balena/meta-balena-thud \
+    ${TOPDIR}/../layers/meta-balena/meta-balena-rust \
     ${TOPDIR}/../layers/poky/meta \
     ${TOPDIR}/../layers/poky/meta-poky \
     ${TOPDIR}/../layers/poky/meta-yocto-bsp \
@@ -15,10 +18,7 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-xilinx/meta-xilinx-bsp \
     ${TOPDIR}/../layers/meta-xilinx/meta-xilinx-standalone \
     ${TOPDIR}/../layers/meta-xilinx/meta-xilinx-contrib \
-    ${TOPDIR}/../layers/meta-balena/meta-balena-common \
-    ${TOPDIR}/../layers/meta-balena/meta-balena-thud \
     ${TOPDIR}/../layers/meta-xilinx-tools \
-    ${TOPDIR}/../layers/meta-rust \
     ${TOPDIR}/../layers/meta-balena-ultra96-zynqmp \
     "
 

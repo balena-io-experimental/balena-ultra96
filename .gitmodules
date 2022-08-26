@@ -4,7 +4,7 @@
 [submodule "layers/meta-xilinx"]
 	path = layers/meta-xilinx
 	url = https://github.com/Xilinx/meta-xilinx
-	branch = rel-v2019.1
+	branch = rel-v2019.2
 [submodule "layers/meta-balena"]
 	path = layers/meta-balena
 	url = https://github.com/balena-os/meta-balena
@@ -22,4 +22,4 @@
 [submodule "layers/meta-xilinx-tools"]
 	path = layers/meta-xilinx-tools
 	url = https://github.com/Xilinx/meta-xilinx-tools
-	branch = rel-v2019.1
+	branch = rel-v2019.2
