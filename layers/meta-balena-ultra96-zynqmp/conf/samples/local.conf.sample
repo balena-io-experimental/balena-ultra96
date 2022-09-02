@@ -1,12 +1,22 @@
 # Supported machines
 MACHINE ?= "ultra96-zynqmp"
 
+BBMASK .= "meta-xilinx-tools/recipes-core/images/"
+
+# Remove reset at commands timeout in u-boot
+CONFIG_BOOT_RETRY_TIME = "-1"
+
+# 100MB boot partition
+RESIN_BOOT_SIZE = "102400"
+
+RESIN_UBOOT_DEVICE_TYPES = "scsi"
+
 DISTRO_FEATURES_append = "systemd virtualization"
 DISTRO ?= "resin-systemd"
 IMAGE_INSTALL_append = "xilinx-bootbin"
 
 PREFERRED_PROVIDER_virtual/boot-bin ?= "xilinx-bootbin"
-PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot-xlnx"
+# PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot-xlnx"
 PREFERRED_PROVIDER_virtual/pmu-firmware = "pmu-firmware"
 
 CONF_VERSION = "1"
